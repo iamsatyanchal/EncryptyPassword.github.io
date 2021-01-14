@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Encrypt a Password</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<br>
+<div class="container">
+  
+  <div>
+    <h4>Encrypt a Password</h4>
+    <p><small>Free for use :) </small></p>
+    
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Password To Encrypt" aria-aria-describedby="basic-addon2" id="inputan" name="inputan">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button" onclick="encrypt()">Encrypt</button>
+        </div>
+      </div>
+      
+      <p>Result : </p>
+      <div id="app"></div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Password To Decrypt" aria-aria-describedby="basic-addon2" id="inputan2" name="inputan2">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button" onclick="decrypte()">Decrypt</button>
+        </div>
+      </div>
+      
+      <p>Result : </p>
+      <div id="app2"></div>
+      
+    </div>
+  </div>
+ 
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
